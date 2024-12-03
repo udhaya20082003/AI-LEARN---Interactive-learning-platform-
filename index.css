@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Rules */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f3f4f7;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.slick-slide > div {
+  margin: 1rem;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-slider .slick-prev::before,
+.slick-slider .slick-next::before {
+  color: black;
+  font-size: 2rem;
+}
+
+.slick-slider > ul > li > button::before {
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Specializations component */
+.left-specializations-linear-gradient {
+  background: linear-gradient(
+    254.59deg,
+    rgba(0, 0, 127, 0.93) -82.03%,
+    #02388a -64.02%,
+    #243f9d -7.59%,
+    #004274 50.72%,
+    #07078e 133.48%
+  );
+}
+
+/* Specializations component */
+.right-specializations-linear-gradient {
+  background: linear-gradient(212.46deg, #1f6e61 0%, #305b67 99.35%);
+}
+@media only screen and (min-width: 768px) {
+  .right-specializations-linear-gradient {
+    box-shadow: rgba(0, 0, 0, 0.2) 60px 0px 50px 0px inset;
+  }
+}
+
+/* Specializations component */
+.specializations .slick-dots li.slick-active button:before {
+  color: #fed04e !important;
+  font-size: 18px;
+}
